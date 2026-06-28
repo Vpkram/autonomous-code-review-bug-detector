@@ -1,0 +1,10 @@
+{
+    "Function 'divide_numbers' does not check if 'b' is zero before performing division.": {
+        "fix": "def divide_numbers(a, b):\n    if b == 0:\n        raise ValueError(\"Cannot divide by zero\")\n    result = a / b\n    return result",
+        "timestamp": "2026-06-28T11:39:15.886979"
+    },
+    "Trying to access an index that does not exist in a list": {
+        "fix": "def factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)\n\nnumbers = [1,2,3]\nprint(numbers[2]) # Accessing index 2 which exists in the list\n\nname = \"Pavan\"\nage = 20\nprint(name + \" \" + str(age)) # Converting age to string for concatenation\n\nnumbers = [1,2,3]\nprint(factorial(5)) # Calculating factorial of 5",
+        "timestamp": "2026-06-28T11:41:52.261459"
+    }
+}
